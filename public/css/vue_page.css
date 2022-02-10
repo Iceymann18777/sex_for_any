@@ -1,0 +1,85 @@
+.modal-shadow{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+min-height: 100%;
+width: 100%;
+background: rgba(0,20,0,0.8);
+z-index: 1;
+}
+.modal{
+background: lightgreen;
+border-radius: 8px;
+padding: 15px;
+min-width: 420px;
+max-width: 480px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.modal-close{
+border-radius: 50%;
+color: #fff;
+background: #2a4cc7;
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: 7px;
+right: 7px;
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+.modal-content{
+margin-bottom: 2px;
+}
+
+.modal-footer{
+text-align: right;
+}
+.modal-div{
+padding: 5px;
+margin-top:5px;
+margin-bottom: 5px;
+}
+input[type=text], input[type=password]{
+height: 45px;
+width: 100%;
+}
+textarea{
+width: 100%;
+}
+#navContainer{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+margin-bottom: 20px;
+}
+.active{
+background: red;
+}
+.note-div{
+margin-top: 20px;
+padding: 10px;
+}
+.note-div div{
+margin-top: 5px;
+margin-bottom: 5px;
+}
+.note-div:nth-child(odd){background: pink;}
+.login-div{
+padding: 10px;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#LoginContainer{
+margin: 0 auto;
+width: 80%;
+}
+.inputLog{}

@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en">
+<head><meta charset="utf-8">
+<title>gesamt</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+<link rel="shortcut icon" type="image/ico" href="../public/images/w4.png"> 
+
+<style>
+	#onlineSection{
+	ackground:pink;
+	border:1px solid black;
+	width:90%;
+	margin:0 auto;
+	height:auto;
+	display:block;
+	padding:0 0 10px 0;	
+	}
+	#onlineContainer{
+	ackground:yellow;	
+	
+	display:flex;
+	flex-direction: row; 
+	flex-wrap:wrap;
+	justify-content:center;
+	height:auto;
+	}
+	#onlineHeader{
+	ackground:green;
+	font-weight:bold;
+	font-size:2em;	
+	text-align:center;
+	}
+	.img-online-container{
+	display:inline-block;
+	flex:auto;
+	height:100px;
+	width:200px;
+	ackground:red;
+		text-align:center;
+		margin:11px;
+	}
+	.img-online{
+height:100px;
+
+	}
+	.img-footer{
+	margin-top:-2px;	
+	ackground:green;
+	}
+</style></head><body>
+<h3>gesamt</h3>
+<button onclick="insert();">insert</button>
+<button onclick="removed();">remove</button>
+
+<section id="onlineSection">
+<header id="onlineHeader">Чат-комнаты.</header>
+<section id="onlineContainer">
+<div data-roomid="5" class="img-online-container">
+<img class="img-online" src="../public/images/default.jpg">
+<footer class="img-footer"><a href="/webrtc/1">Globi</a>&nbsp;, 18 лет. (<span>34</span> чел)</footer>
+</div>
+</section>
+</section>
+<hr><button onclick="fick_das();">date</button><br>
+<input id="fick" type="date">
+
+<script>
+function insert(){
+var div=document.createElement('div');
+div.setAttribute('data-roomid',5);
+div.className="img-online-container";
+div.innerHTML='<img class="img-online" src="../public/images/default.jpg">'+
+'<footer class="img-footer"><a href="/webrtc/1">Globi</a>&nbsp;, 18 лет. (<span>34</span> чел)</footer>';
+onlineContainer.appendChild(div);	
+}
+function removed(){
+var l=document.querySelector('[data-roomid="5"]');
+if(l)l.remove();
+}
+function fick_das(){
+	alert(fick.value);
+	}
+</script>
+</body>
+</html>

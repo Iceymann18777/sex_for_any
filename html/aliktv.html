@@ -1,0 +1,207 @@
+<html><head><title>AlikTV</title>
+<style>
+*{box-sizing:border-box;}
+ #ipSection{
+	background:grey;
+	border:1px solid black;
+	display:block;
+	width:100%;
+	in-height:500px;
+	height:auto;
+	}
+	#gridWrapper{
+		display:grid;
+		rid-template-columns:repeat(2,1fr);
+		grid-template-columns: 70% 30%;
+		grid-auto-rows:auto;
+		osition:relative;
+		}
+	#mainIpPanel{border:1px solid red;height:45px;background:silver;
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+font-weight:bold;
+
+		}
+	#ipContainer{
+		osition:relative;
+		border:1px solid green;
+		idth:60%;
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+
+		}
+	#chatContainer{
+		border:1px solid brown;
+		rid-column-start:1;
+		rid-column-end:3;
+		rid-row-start:2;
+		rid-row-end:2;
+		idth:40%;
+		}
+	#mainIpFooter{
+		border:1px solid pink;height:45px;
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+		}
+	.videocontainer{
+		width:300px;
+		height:330px;
+		border:1px solid green;
+		margin:5px;
+		}
+	.obenvideo,.undervideo{
+	height:45px;
+	display:flex;
+	justify-content: flex-end;
+align-items: center;
+}
+.benehmung,.benehmung2{align-self:center;}
+.benehmung2.eye{
+	width:50px;
+	background-image:url( "../public/images/eye2.svg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	ackground-size:cover;
+	order:1px solid red;
+	height:85%;
+	position:relative;
+	}
+	.benehmung.start{
+		width:45px;
+		background:black;
+		border-radius:0.5rem;
+	background-image:url( "../public/images/play.png");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	ackground-size:cover;
+	order:1px solid red;
+	height:85%;
+		}
+	.benehmung2.eye,.benehmung2.count{margin-right:4px;align-self:center;font-weight:bold;}
+	.benehmung.zimmer,.benehmung.money{margin-right:auto;font-weight:bold;}
+	.videowrapper{height:240px;}
+	.obenchat{
+		height:45px;border:1px solid gold;
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+justify-content: flex-start;
+align-items: center;
+		}
+		.obenchat div{padding:4px;}
+		.underchat{height:45px;}
+	.chat{min-height:340px;border:1px solid pink;background:white;}
+	
+	.strelka{
+		width:30px;
+		height:30px;
+		display:inline-block;
+		position:absolute;
+		top:8px;
+		right:2px;
+		
+		}
+		.strelka svg{fill:blue;}
+	.textarea{height: 44px;width:100%;position:relative;}
+	textarea{height:100%;width:100%;padding:4px;}
+	#allwrapper{position:relative;}
+	@media screen and (max-width: 850px){
+		html{background:red;}
+		#iSection{height:calc(1000px - 90px);}
+		#gridWrapper{grid-template-columns: 100% 100%;}
+		#chatContainer{
+			grid-row-start:2;
+		rid-row-end:3;
+		position:absolute;
+		top:45px;
+		right:0;
+			}
+			.videocontainer{
+				width:100%;
+				}
+				.videowrapper{
+					width:100%;
+					}
+					.ideowrapper video{width:100;}
+					#ipContainer{width:100%;}
+		}
+</style>
+</head><body>
+<h1> Жилище Алика. Видеотрансляция с ИП-камер. 24 часа в сутки</h1>
+<section id="ipSection">
+	<section class="" id="mainIpPanel">
+	<div class="status"><span>Здесь мой статус. Последний хуй без соли доедаю!!!</span></div>
+	</section>
+	<section id="gridWrapper">
+		<div id="allwrapper">
+	<section class="box" id="ipContainer">
+	<div class="videocontainer">
+	<div class="obenvideo">
+	<div class="benehmung zimmer"><span>Кухня</span></div><div class="benehmung start"></div>
+	</div>
+	<div class="videowrapper">
+	<video class="video" poster="../public/images/tvpic.jpg"></video>
+	</div>
+	<div class="undervideo">
+		<div class="benehmung2 eye"></div><div class="benehmung2 count"><span>0</span></div>
+	</div>
+	</div>
+	
+	</section>
+	<section class="box" id="chatContainer">
+	<div class="obenchat"><div><span>В чате <b>0</b> чел.</span></div></div>
+	<div class="chat"></div>
+	<div class="underchat">
+	<div class="textarea"><textarea placeholder="Your message"></textarea>
+	<div class="strelka">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+<g><path d="M10,991.1l980-493.2L10,8.9l101.1,415.7l532.7,73.4l-532.7,70.5L10,991.1z"/></g>
+</svg>
+	</div>
+	</div>
+	</div></div>
+	</section>
+	</section>
+	
+	<footer class="" id="mainIpFooter"><div><button>Оформить подписку</button></div></footer>
+</section>
+
+
+<div>PISKA</div>
+<style>canvas{border:1px solid green;}</style>
+<canvas id="cnv"></canvas>
+<script>
+var ctx = cnv.getContext("2d");
+var img = new Image();
+img.src = "../public/images/promo.jpg";
+img.onload = function(){
+	cnv.width = img.naturalWidth;
+	cnv.height = img.naturalHeight;
+ctx.drawImage(img, 0,0, img.naturalWidth, img.naturalHeight);
+ctx.font = 'bold 68px KulminoituvaRegular';
+  ctx.fillStyle = 'orangered';
+  ctx.textBaseline = 'top';
+  ctx.fillText  ('Промокод 9999 при регистрации', 40, 24);	
+  ctx.font = 'bold 68px Helvetic';
+ 
+  ctx.fillStyle = 'brown';
+  ctx.textBaseline = 'top';
+  ctx.fillText  ('0.02 биткоина в подарок!', 40, 120);
+  ctx.fillStyle = 'green';
+  ctx.fillText  ('1000 webcam-моделей ждут Вас!', 40, cnv.height - 190);		
+  ctx.fillStyle = 'orange';
+  ctx.font = 'bold 98px Helvetic';
+  ctx.fillText  ('https://chelikon.space', 60, cnv.height - 105);	
+}
+</script>
+</body></html>

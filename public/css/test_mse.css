@@ -1,0 +1,12 @@
+.vbox{width:300px;height:150px;}
+.vbox video{width:100%;}
+.videocontainer{width:300px;}
+#videowrapper{
+display:flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+.div{margin-top:10px;}
+button{margin-top:10px;}

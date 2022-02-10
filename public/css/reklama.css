@@ -1,0 +1,43 @@
+form{
+ackground:red;
+border:1px solid lightgreen;
+width:50%;
+padding:10px;
+}
+label{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+width:100%;
+ackground:green;
+}
+/*input{height:30px;}
+button{height:30px;font-weight:bold;}
+*/
+ul.green > li{margin-bottom:4px;} 
+textarea{
+width:100%;
+}
+.orange{background:orange;}
+.green{background:lightgreen;}
+
+@keyframes puls{
+from{background: lightgreen;}
+to{background: green;}
+}
+button.puls, input[type=submit].puls{
+animation-name: puls;
+animation-duration:1s;
+animation-direction: alternate;
+animation-iteration-count:infinite;
+}
+
+@media screen and (max-width: 751px){
+form{width:100%;}
+.reklama-img{width: 50%;}
+}
+
+@media screen and (max-width: 320px){
+form{width:100%;}
+.reklama-img{width: 80%;}
+}

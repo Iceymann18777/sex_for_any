@@ -1,0 +1,60 @@
+{
+ "is_reklama": false,
+ "meta":{
+	 "url":"https://chelikon.space",
+	 "image":"https://chelikon.space/images/home2.jpg",
+	 "site_name": "chelikon",
+	 "obi":
+	 {"title":"Гей Санкт-Петербург, Россия - доска гей-объявлений о сексе, знакомствах, тусовках, встречах, аренда квартир.",
+	  "description":"Гей-знакомства в Санкт-Петербурге и России. Доска частных интимных объявлений. Без регистрации."
+	 },
+	 "video":
+	 {"title":"video",
+	  "description":"user's video"
+	 },
+	 "main_page":
+	 {"title":"Вебкам сайт Chelikon для видеообщения",
+	  "description":"Видеообщение по вебке. Донаты в биткоинах и токенах. Хочу стать стримером!"
+	 }, 
+	 "aliktv":
+	 {"title": "Видеотрансляция с IP-камер",
+      "description": "Круглосуточная трансляция жилища Алика с IP-камер. Заработок в интернете."		 
+	},
+	 "reklama":
+	 {"title":"Заказать рекламу.",
+	  "description":"Заказать рекламу на вебкам-сайте Chelikon для всех. Недорого."
+	 },
+	 "blog":
+	 {"title":"Блог o заработке.",
+	  "description":"Блог о биткоинах, заработке в интернете, веб камерах."
+	 },
+	 "basa":
+	 {"title":"База знаний Chelikon.",
+	  "description":"База знаний Chelikon."
+	 },
+	 "about":
+	 {"title": "О сайте",
+		 "description": "О сайте вебкам"
+	 },
+	 "users":
+	 {"title": "Пользователи",
+		 "description": "Пользователи вебкам"
+	 },
+	 "privacy":
+	 {"title": "Privacy",
+		 "description": "Privacy"
+	 }
+},
+"warnig":"",
+"check_age":false,
+"promo_token": 50,
+"one_token_btc": 0.0008,
+"payout_token": 100,
+"payout_promo_token": 500,
+"site_name": "chelikon",
+"site_domain": "chelikon.space",
+"vk": "https://vk.com/public201149312",
+"telega": "https://t.me/gaychel",
+"yandex_pay": false,
+"is_fakes_enabled": true
+}

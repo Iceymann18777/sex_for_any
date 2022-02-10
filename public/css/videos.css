@@ -1,0 +1,16 @@
+.psvg{display:inline-block;width:35px;height:35px;vertical-align: -0.4rem;}
+#uservideo{width: 50%;background: lightgreen;margin: 0 auto;}
+h1{text-align: center;line-height:1.8;}
+#getMorediv{text-align:right;}
+.owner_video_section{width:100%;}
+.owner_video_container video{width:100%;}
+.underdiv{padding:0.5rem;line-height:1.5;}
+.div{padding:20px;margin-top:20px;background:brown;}
+@media screen and (max-width: 751px) {
+
+#uservideo{width: 98%;}
+}
+
+@media screen and (max-width:320px){
+
+}

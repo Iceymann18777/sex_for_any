@@ -1,0 +1,149 @@
+<html>
+	<style>
+	#multimedia{background:black;height:500px;}
+	#chatinfo{ackground:red;height:45px;}
+	#allwrapper{ackground:gold;position:relative;height: calc(500px - 45px);}
+	#videosection{ackground:black;position:absolute;left:0;top:0;width:50%;height:100%;order:5px solid silver;}
+	#chatsection{
+		transition: width 1s;
+		position: absolute;top:0;right:0;height:100%;width:50%;order:5px solid brown;}
+	#chat{
+		display:block;
+		height:calc(500px - 45px);
+		ackground:pink;
+		order:4px solid red;
+		overflow-y:auto;
+white-space:pre-line;
+word-wrap:break-word;
+overflow-wrap:break-word;
+overflow-x:auto;
+		}
+	video{order: 1px solid green;width:100%;height:100%;}
+	#undervideo{ackground:yellow;height:45px;width:100%;text-align:right;position:relative;border:1px solid silver;}
+	#videowrapper{ackground:red;height:100%;width:100%;position:relative;}
+	#underchat{ackground:red;height:45px;position:relative;}
+	#textarea{width:100%;height:45px;position:absolute; top:0;left:0;}
+.chatsend{}
+.chat-div{color:white;background:rgba(255,255,255,0.3);padding: 5px;}
+
+#chatinfo{
+ackground:red;
+	height:45px;
+	width:100%;
+
+	position:relative;
+	display:flex;
+flex-wrap:wrap;
+flex-direction:row;
+
+justify-content:start;
+align-items:center;
+adding-left:20px;
+
+overflow:hidden;
+}
+#chatinfo.span{
+width:auto;
+	vertical-align:-15px;
+display:inline-block;
+argin-right:auto;
+align-self:start;
+text-algn:left;
+background:orange;
+
+}
+.span span{color:orange;margin-left:5px;padding:5px;border:1px solid orange;letter-spacing:1px;font-weight:bold;}
+.span b{}
+.imghalter2{
+	
+	width:44px;
+	height:44px;
+	cursor: pointer;
+	display:inline-block;
+	position:absolute; 
+	top:2px; right:1%;
+	
+	}
+	.imghalter2 img{width:100%;height:100%;}
+	.knopka{position:absolute;top:50%;left:50%;width:50px;height:50px;transform:translate(-50%, -50%);}
+.knopka-send{width:38px;height:38px;position:absolute;top:50%;right:10px;transform:translateY(-50%);cursor:pointer;}
+#pushLiveNotes{position:absolute;top:0;left:0;}
+	#footerDonate div{margin:5px;padding:5px;}
+	#anketaForms{display:none;}
+	#anketaForms.open{display: block;}
+	#anketaForms div{margin:5px;padding:5px;}
+	textarea{padding:10px;}
+	@media screen and (max-width: 495px){
+		html{background:green;}
+#chatsection{width:50%;}
+#videosection{width:100%;order:6px solid blue;osition:relative;}
+#textarea{margin-right: 150%;}
+		#multimedia{height:auto;}
+		.chat-div{background:rgba(25,25,25,0.4);color:white;}
+		#chatsection.hide{
+			width:0;
+			}
+		}
+	</style>
+<body>
+<h4>Mediasoup</h4>
+<div><button>Start an anonym live broadcasting</button></div>
+<div id="anketaForms">
+<div><label>Your bitcoin addresss<input type="text" placeholder="Your bitcoin address"></label><button>save</button></div>
+<div><label>Your bank cards number<input type="text" placeholder="Your bank card number"></label><button>save</button></div>
+<div><label>Your status<input  type="text" placeholder="Your status"></label><button>save</button></div>
+</div>
+<div id="mainpanel">here is my status</div>
+<section id="multimedia">
+<div id="chatinfo">
+<div class="span"><span><b>chat:</b></span>&nbsp;<span>0</span>&nbsp;<span><b>viewers:</b></span>&nbsp;<span>0</span>
+<span><b>bitcoins:</b></span><span>0</span>
+</div>
+<div class="imghalter2" onclick="hide_chat(this);"><img src="../public/images/FullScreen.png"></div>
+</div>
+<div id="allwrapper">
+
+<div id="videosection">
+	<div id="videowrapper"><div class="knopka" onclick=""><img src="../public/images/play2.svg"></div><video poster="../public/images/tvpic.jpg"></video></div>
+
+</div>
+<div id="chatsection">
+	<div id="chat"></div>
+
+</div>
+</section>
+<div id="underchat">
+	<textarea  id="textarea" placeholder="Your message"></textarea>
+</div>
+<div id="undervideo"><button id="pushLiveNotes">Subscribe to the live broadcasting</button>
+<div class="knopka-send" onclick="insert_message(this);"><img src="../public/images/play.svg"></div>
+</div>
+<div id="footerDonate">
+<div>Donations:</div><hr>
+<div><span>Bitcoins addresse</span><span id="bitcoinsSpan"></span></div><hr>
+<div><span>Bank cards</span><span id="cardsSpan"></span></div>
+</div><hr>
+<h1>fucker</h1>
+<script>
+function insert_message(ob){
+	//alert(textarea.value);
+	if(!textarea.value)return;
+//sendChat.className = "";
+var m=document.createElement('div');
+m.className = "chat-div";
+//m.innerHTML = '<span class="chat-user">' + ob.from + ': </span><span class="chat-message">' + ob.msg + '</span>';
+//alert(textarea.value);
+m.innerHTML = '<div class="usernick">alik</div><div class="chatcontent">' + textarea.value + '</div>';
+//m.innerHTML=textarea.value;
+//m.innerHTML+= '<div class="g-data">' + g_data(ob.tz) + '</div>';
+document.getElementById("chat").appendChild(m);
+//alert(1);
+chat.scrollTop = chat.clientHeight + chat.scrollHeight;
+}
+function hide_chat(el){
+	//alert(1);
+	chatsection.classList.toggle("hide");
+	}
+</script>
+</body>
+</html>
